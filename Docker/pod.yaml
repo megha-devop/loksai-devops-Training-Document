@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mypod
+  labels: 
+  app: pod
+spec:
+  containers:
+    name: mycont
+    image: httpd
+    ports:
+    - containerPort: 80
+    resources:
+      requests:
+        cpu:
+        memory:
+      limits:
+        cpu:
+        memory:
+    volumeMounts:
+    - name:
+      mounthPath:
+  volumes:
+  - name:
+    persistentVolumeClaim:
+      claimName:
